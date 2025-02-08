@@ -1,0 +1,42 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+main {
+    display:grid;
+    grid-template-areas: "page"
+                         "foot";
+    grid-template-rows: 1fr, auto;
+}
+
+.main-container {
+    display:grid;
+    grid-area: page;
+    grid-template-areas: "main-menu main-menu"
+                         "nav main";    
+    grid-template-rows: 15vh 1fr;
+    grid-template-columns: 20vw 1fr;
+    
+}
+
+.main-menu {
+    grid-area: main-menu;
+    background-color: bisque;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(102, 148, 148);
+}
+
+.main {
+    grid-area: main;
+    background-color: brown;
+}
+
+footer {
+    grid-area: foot;
+    background-color: blueviolet;
+}

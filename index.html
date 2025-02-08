@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="author" content="Karoly Orban">
+        <meta name="description" content="Java Basic Documentation">
+        <title>Java Technical Documentation - Basics</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <main>
+            <section class="main-container">
+                <section class="main-menu">
+                    This documentation page is for the basics of the Java programming language. Inspired by freeCodeCamp's JavaScript Documentation page.
+                </section>
+                <section class="nav">
+                    <ul>
+                        <li>Introduction</li>
+                        <li>Hello World</li>
+                        <li>Primitive Data Types</li>
+                        <li>Reference Data Types</li>
+                        <li>Operators</li>
+                        <li>Control-Flow</li>
+                    </ul>
+                </section>
+                <section class="main">
+                    <p><h2>Introduction</h2>Java is a versatile, object-oriented programming language that has been a cornerstone of software development since its release by Sun Microsystems in 1995. Known for its "write once, run anywhere" (WORA) philosophy, Java enables developers to create platform-independent applications that can run on any device equipped with a Java Virtual Machine (JVM). This portability, combined with its robustness, security features, and extensive standard library, has made Java a popular choice for building everything from web applications and mobile apps to enterprise-level systems and embedded devices.
+
+                        Java's syntax is clear and concise, making it accessible to beginners while offering advanced features for experienced developers. It supports multithreading, automatic memory management (garbage collection), and strong type-checking, which contribute to its reliability and performance. Additionally, Java's vast ecosystem of frameworks, tools, and libraries, such as Spring, Hibernate, and Apache Maven, further enhances its capabilities and productivity.
+                        
+                        Whether you're developing desktop applications, Android apps, or large-scale distributed systems, Java provides the tools and flexibility needed to bring your ideas to life. This documentation will guide you through the core concepts, features, and best practices of Java programming, helping you harness its full potential.</p>
+                    <p><h2>Hello World</h2>What would be better then the all-famous 'Hello World' to get your feet wet?<br>
+                        <code>class HelloWorld { <br>
+                            &nbsp; &nbsp; &nbsp; public static void main (String[] args) { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, World!"); <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                        }
+                        </code></p>
+                    <p><h2>Primitive Data Types</h2>The Primitive Data Types in Java are:
+                        <h3>int</h3><br>
+                        <ul>
+                            <li>Size: 32 bits (4 bytes)</li>
+                            <li>Range -2,147,483,648 to 2,147,483,647 </li>
+                            <li>Use case: you need to store whole (both positive and negative) numbers.</li>
+                        </ul>
+                        <h3>double</h3><br>
+                        <ul>
+                            <li>Size: 64 bits (8 bytes)</li>
+                            <li>Range: ±1.79769313486231570E+308 (Approximately) </li>
+                            <li>Use case: The default choice for decimal values due to its precision.</li>
+                        </ul>
+                        <h3>float</h3><br>
+                        <ul>
+                            <li>Size: 32 bits (4 bytes)</li>
+                            <li>Range: ±3.40282347E+38F (Approximately) </li>
+                            <li>Use case: The same as double, but half the size. It is used where memory might be a concern.</li>
+                        </ul>
+                        <h3>long</h3><br>
+                        <ul>
+                            <li>Size: 64 bits (8 bytes)</li>
+                            <li>Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 </li>
+                            <li>Use case: The same as double, but half the size. It is used where memory might be a concern.</li>
+                        </ul>
+                        <h3>short</h3><br>
+                        <ul>
+                            <li>Size: 16 bits (2 bytes)</li>
+                            <li>Range: -32,768 to 32,767 </li>
+                            <li>Use case: Used for memory-saving purposes when <code>int</code> is larger than necessary.</li>
+                        </ul>
+                        <h3>byte</h3><br>
+                        <ul>
+                            <li>Size: 8 bits (1 bytes)</li>
+                            <li>Range: -128 to 127 </li>
+                            <li>Use case: Ideal for saving memory in large arrays or when working with raw binary data.</li>
+                        </ul>
+                        <h3>char</h3><br>
+                        <ul>
+                            <li>Size: 16 bits (2 bytes)</li>
+                            <li>Range: 0 to 65,535 (unsigned, represents Unicode characters).</li>
+                            <li>Use case: Used to store single characters or Unicode values.</li>
+                        </ul>
+                        <h3>boolean</h3><br>
+                        <ul>
+                            <li>Size: Not precisely defined (JVM-dependent, typically 1 bit)</li>
+                            <li>Range: <code>true</code> or <code>false</code>.</li>
+                            <li>Use case: Represents logical values.</li>
+                        </ul>
+                    </p>
+                    <p><h2>Reference Data Types (not an exhaustive list)</h2>The most common Reference Data Types are:</p>
+                        <code>String</code> <div class="description"> Represents a sequence of characters (for example: "Hello World!"). </div>
+                        <code>Array</code> <div class="description"> Represents a collection of elements of the same type: for example a set of integers (<code>int</code>) or characters (<code>char</code>). </div>
+                        <code>Class</code> <div class="description"> Represents a user-defined class. </div>
+                        <code>Interface</code> <div class="description"> Represents a reference type similar to a class but with abstract methods. </div>
+                        <code>Object</code> <div class="description"> The root class for all Java classes. All non-primitive types inherit from <code>Object</code>. </div>
+                    <p><h2>Operators</h2>The more commonly used operators</p>
+                    <p><h2>Control-Flow</h2>Functions for control-flow</p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            References were taken from <a href="https://docs.oracle.com/en/java/javase/22/" target=_blank>Oracle's</a> official page, unless stated otherwise.
+        </footer>
+    </body>
