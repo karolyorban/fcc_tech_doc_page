@@ -94,7 +94,133 @@
                         <code>Interface</code> <div class="description"> Represents a reference type similar to a class but with abstract methods. </div>
                         <code>Object</code> <div class="description"> The root class for all Java classes. All non-primitive types inherit from <code>Object</code>. </div>
                     <p><h2>Operators</h2>The more commonly used operators</p>
-                    <p><h2>Control-Flow</h2>Functions for control-flow</p>
+                        <ul>
+                            <li>Arithmetic Operators</li>
+                                <div class="subtitle">Used for performing basic mathematical operations</div>
+                                <ul class="second_level">
+                                    <li><code>+</code> Addition <code>int sum = a + b;</code></li>
+                                    <li><code>-</code> Substraction <code>int diff = a - b;</code></li>
+                                    <li><code>*</code> Multiplication <code>int product = a * b;</code></li>
+                                    <li><code>/</code> Division <code>int quotient = a / b;</code></li>
+                                    <li><code>%</code> Modulus (remainder after division) <code>int remainder = a % b;</code></li>
+                                </ul>
+                            <li>Relational Operators</li>
+                                <div class="subtitle">Used to compare values and return a boolean result(<code>true</code> or <code>false</code>)
+                                <ul class="second_level">
+                                    <li><code>==</code> Equal to <code>if(a == b)</code></li>
+                                    <li><code>!=</code> Not equal to <code>if(a != b)</code></li>
+                                    <li><code>&gt;</code> Greater than <code>if(a &gt; b)</code></li>
+                                    <li><code>&lt;</code> Less than <code>if(a &lt; b)</code></li>
+                                    <li><code>&gt;=</code> Greater than or equal to <code>if(a &gt;= b)</code></li>
+                                    <li><code>&lt;=</code> Less than or equal to <code>if(a &lt;= b)</code></li>
+                                </ul>
+                            <li>Logical Operators</li>
+                                <div class="subtitle">Used to combine multiple boolean expressions</div>
+                                <ul class="second_level">
+                                    <li><code>&&</code> Logical AND, returns true if all the conditions are true, false otherwise. <code>if(a > 0 && b > 0)</code></li>
+                                    <li><code>|</code> Logical OR, returns false if any of the conditions are true, false if all of them are false. <code>if(a > 0 | b > 0)</code></li>
+                                    <li><code>!</code> Logical NOT, negates the condition (<code>true</code> becomes <code>false</code> and vice versa.)<code>if(!(a == b))</code></li>
+                                    <li><code>^</code> Logical XOR, returns true if one condition is true, one is false. <code>if(a > b ^ a > c)</code></li>
+                                </ul>
+                            <li>Assignment Operators</li>
+                                <div class="subtitle">Used to assign values to variables</div>
+                                <ul class="second_level">
+                                    <li><code>+</code> Simple assignment <code>int a = 10</code></li>
+                                    <li><code>+=</code> Add and assign <code>a += 5</code> (equivalent to <code>a = a + 5;</code>)</li>
+                                    <li><code>-=</code> Substract and assign <code>a -= 5</code>(equivalent to <code>a = a - 5;</code>)</li>
+                                    <li><code>*=</code> Multiply and assign <code>a *= 5</code>(equivalent to <code>a = a * 5;</code>)</li>
+                                    <li><code>/=</code> Divide and assign <code>a /= 5</code>(equivalent to <code>a = a / 5;</code>)</li>
+                                    <li><code>%=</code> Modulus and assign <code>a %= 5</code>(equivalent to <code>a = a % 5;</code>)</li>
+                                </ul>
+                            <li>Unary Operators</li>
+                                <div class="subtitle">Operate on a single operand</div>
+                                <ul class="second_level">
+                                    <li><code>+</code> Unary plus (indicates positive value) <code>int a = +10;</code></li>
+                                    <li><code>-</code> Unary minus (negates the value) <code>int a = -10;</code></li>
+                                    <li><code>++</code> Increment (increases value by 1) <code>a++;</code> or <code>++a;</code></li>
+                                    <li><code>--</code> Decrement (decreases value by 1) <code>a--;</code> or <code>--a;</code></li>
+                                    <li><code>!</code> Logical not (inverts boolean value) <code>boolean myCondition = !true;</code></li>
+                                </ul>
+                            <li>Bitwise Operators</li>
+                            <div class="subtitle">Used to perform operation on individual bits of integer types</div>
+                                <ul class="second_level">
+                                    <li><code>&</code> Bitwise AND <code>int result = a & b;</code></li>
+                                    <li><code>|</code> Bitwise OR <code>int result = a | b;</code></li>
+                                    <li><code>^</code> Bitwise XOR <code>int result = a ^ b;</code></li>
+                                    <li><code>~</code> Bitwise NOT (complement) <code>int result = ~a;</code></li>
+                                    <li><code>&lt;&lt;<x></code> Left shift <code>int result = a &lt;&lt; 2;</code></li>
+                                    <li><code>&gt;&gt;</code> Right shift <code>int result = a &gt;&gt; 2;</code></li>
+                                    <li><code>&gt;&gt;&gt;</code> Unsigned right shift <code>int result = a &gt;&gt;&gt; 2;</code></li>
+                                </ul>
+                            <li>Ternary (Conditional) Operators</li>
+                            <div class="subtitle">A shorthand for an <code>if-else</code> statement.</div>
+                                <ul class="second_level">
+                                    <li><code>? :</code> Ternary operator <code>int max = (a > b) ? a : b;</code></li>
+                                </ul>
+                            <li>Instanced Operators</li>
+                            <div class="subtitle">Used to check if an object is an instance of a specific class or interface</div>
+                                <ul class="second_level">
+                                    <li><code>instanceof</code> Checks object type <code>if (myObject instanceof String)</code></li>
+                                </ul>
+                            <li>Other Operators</li>
+                                <ul class="second_level">
+                                    <li>Member access operator (<code>.</code>): Accesses members (fields of methods) of an object.<br>Example: <code>obj.method();</code></li>
+                                    <li>Array index operator (<code>[]]</code>): Accesses elements of an array.<br>Example: <code>int x = myArray[position];</code></li>
+                                    <li>Lambda operator (<code>-&gt;</code>): Used in lambda expressions.<br>Example: <code>(a, b) -&gt; a + b;</code></li>
+                                </ul>
+                        </ul>
+                    <p><h2>Control-Flow</h2>Structures that allow you to make decisions, repeat actions, and manage the flow of execution based on conditions.</p>
+                    <ol>
+                        <li>Decision-Making Statements</li>
+                        <div class="subtitle">These statements allow you to execute specific blocks of code based on certain conditions.</div>
+                        <ol>
+                            <li><code>if</code> Statement</li><br>Executes a block of code if a specified condition is <code>true</code>.
+                            <img class="code_scrnshot" src="source_files/if.png" alt="An if statement example">
+                            <li><code>if-else</code> Statement</li><br>Executes one block of code if the specified condition is <code>true</code>, and another if it is <code>false</code>.
+                            <img class="code_scrnshot" src="source_files/if_else.png" alt="An if-else statement example">
+                            <li><code>if-else-if</code> Statement</li><br>Allows to test for multiple conditions.
+                            <img class="code_scrnshot" src="source_files/if_else_if.png" alt="An if-else-if statement example">
+                            <li><code>switch</code> Statement</li><br>Allows the selection and execution of one code block from multiple options based on the value of a <code>variable</code> or <code>expression</code>.
+                            <img class="code_scrnshot" src="source_files/switch.png" alt="A switch statement example">
+                        </ol>
+                        <li>Looping Statements</li>
+                        <div class="subtitle">These statements allow you to repeat a block of code multiple times.</div>
+                        <ol>
+                            <li><code>for</code> Loop</li><br>Executes a block of code a specific number of times.
+                            <img class="code_scrnshot" src="source_files/for.png" alt="A for loop example">
+                            <li><code>while</code> Loop</li><br>Repeats a block of code as long as a specified condition is <code>true</code>.
+                            <img class="code_scrnshot" src="source_files/while.png" alt="A while loop example">
+                            <li><code>do-while</code> Loop</li><br>Similar to the <code>while</code> loop, but the block of code is executed at least once before the condition is checked.
+                            <img class="code_scrnshot" src="source_files/do_while.png" alt="A do-while loop example">
+                            <li>Enhanced <code>for</code> Loop (for-each Loop)</li><br>Iterates over the elements in an array or collection.
+                            <img class="code_scrnshot" src="source_files/for_each.png" alt="An enhanced for loop example">
+                        </ol>
+                        <li>Jump statements</li>
+                        <div class="subtitle">These statements allow you to transfer control to another part of the program</div>
+                        <ol>
+                            <li><code>break</code> Statement</li><br>Terminates the loop or <code>switch</code> statement and transfers control to the statement immediately following the loop or <code>switch</code>.
+                            <img class="code_scrnshot" src="source_files/break.png" alt="A break statement example">
+                            <li><code>continue</code> Statement</li><br>Skips the remaining code in the current iteration of a loop and proceeds to the next iteration.
+                            <img class="code_scrnshot" src="source_files/continue.png" alt="A continue statement example">
+                            <li><code>return</code> Statement</li><br>Exits a method and optionally returns a value to the caller.
+                            <img class="code_scrnshot" src="source_files/return.png" alt="A return statement example">
+                        </ol>
+                        <li>Exception Handling Statements</li>
+                        <div class="subtitle">These statements allow you to handle runtime errors and exceptions.</div>
+                        <ol>
+                            <li><code>try-catch</code> Block</li><br>Catches and handles exceptions that occur in the <code>try</code> block.
+                            <img class="code_scrnshot" src="source_files/try-catch.png" alt="A return statement example">
+                            <li><code>finally</code> Block</li><br>Executes code regardless of whether an exception is thrown or not. It is often used for cleanup tasks.
+                            <img class="code_scrnshot" src="source_files/finally.png" alt="A return statement example">
+                            <li><code>throw</code> Statement</li><br>Explicitly throws an exception.
+                            <img class="code_scrnshot" src="source_files/throw.png" alt="A return statement example">
+                            <li><code>throws</code> Clause</li><br>Declares that a method may throw one or more exceptions.
+                            <img class="code_scrnshot" src="source_files/throws.png" alt="A return statement example">
+                        </ol>
+                        <li>Labelled Statements</li>
+                        <div class="subtitle">Allows the lagelling of a block of code and use it with <code>break</code>, <code>continue</code>, <code>return</code> and <code>goto</code>.</div>
+                        <img class="code_scrnshot" src="source_files/labelled" alt="A labelled statement example">
+                    </ol>
                 </section>
             </section>
         </main>
