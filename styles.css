@@ -18,7 +18,6 @@ main {
                          "nav main";    
     grid-template-rows: 15vh 1fr;
     grid-template-columns: 20vw 1fr;
-    
 }
 
 .main-menu {
@@ -32,11 +31,22 @@ main {
 }
 
 .main {
+    padding: 2rem;;
     grid-area: main;
     background-color: brown;
 }
 
+
+
 footer {
     grid-area: foot;
     background-color: blueviolet;
+}
+
+.p_subtitle {
+    color: green;
+}
+
+.subtitle {
+    color: blue;
 }
