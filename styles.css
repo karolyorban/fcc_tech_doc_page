@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: #99621e;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 2.2rem;
+}
+
+h2 {
+    color: #99621e;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+h3 {
+    color:#99621e;
+    margin-left: 2rem;
+}
+
+code {
+    color: green;
+}
+
 main {
     display:grid;
     grid-template-areas: "page"
@@ -13,6 +35,7 @@ main {
 
 .main-container {
     display:grid;
+    
     grid-area: page;
     grid-template-areas: "main-menu main-menu"
                          "nav main";    
@@ -22,27 +45,47 @@ main {
 
 .main-menu {
     grid-area: main-menu;
-    background-color: bisque;
+    background-color: #171717;
+    position: sticky;
+    top: 0;
 }
 
 .nav {
     grid-area: nav;
-    background-color: rgb(102, 148, 148);
+    background-color: #171717;
+    position: sticky;
+    height: calc(100vh - 15vh);
+    top: 15vh;
+    color: #99621e;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav li {
+    margin-bottom: 1.5rem;
 }
 
 .main {
     padding: 2rem;;
     grid-area: main;
-    background-color: brown;
+    background-color: #2f2f2f;
 }
 
 footer {
     grid-area: foot;
-    background-color: blueviolet;
+    background-color: #171717;
 }
 
 .p_subtitle {
-    color: green;
+    color: #b51266;
+    margin-left: 1rem;
+    font-style: italic;
+    font-size: 1.2rem;
 }
 
 .subtitle {
@@ -65,7 +108,7 @@ ol ol {
 }
 
 ul {
-    padding-left: 1.8rem;
+    padding-left: 3.5rem;
 }
 
 ul ul {
