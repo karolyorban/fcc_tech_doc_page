@@ -36,8 +36,6 @@ main {
     background-color: brown;
 }
 
-
-
 footer {
     grid-area: foot;
     background-color: blueviolet;
@@ -49,4 +47,28 @@ footer {
 
 .subtitle {
     color: blue;
+}
+
+img {
+    display: block;
+    margin-top: 0.2rem;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ul {
+    padding-left: 1.8rem;
+}
+
+ul ul {
+    counter-reset: item;
+    padding-left: 2rem;
 }
