@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 16.5vh;
+    scroll-behavior: smooth;
+}
+
 h1 {
     color: #99621e;
     font-size: 2.2rem;
@@ -62,11 +67,8 @@ main {
     font-style: italic;
 }
 
-.nav ul {
-    list-style-type: none;
-}
-
 .nav li {
+    list-style-type: none;
     margin-bottom: 1.5rem;
 }
 
