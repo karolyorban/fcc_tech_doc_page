@@ -72,6 +72,31 @@ main {
     margin-bottom: 1.5rem;
 }
 
+.btn {
+    position: relative;
+    padding-left: 2rem;
+    text-decoration: none;
+    color: #d97b40;
+}
+
+.btn::before {
+    content: '';
+    position: absolute; 
+    left: 0;
+    width: 14vw;
+    height: 100%;
+    background-color: #5d5d5d;
+    border: 0.2rem solid #5d5d5d;
+    transform: skewX(-25deg);
+    z-index: -1;
+    border-radius: 22% 0 22% 0;
+    transition: 500ms ease-out;
+}
+
+.btn:hover::before {
+    border-color: green;
+}
+
 .main {
     padding: 2rem;;
     grid-area: main;
